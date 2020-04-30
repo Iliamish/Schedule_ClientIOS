@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="scI-V4-c6n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HNF-81-Hv0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -49,10 +49,27 @@
             </objects>
             <point key="canvasLocation" x="-147" y="79"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Ri-gK-CNK">
+            <objects>
+                <navigationController id="HNF-81-Hv0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l32-LQ-6O9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="scI-V4-c6n" kind="relationship" relationship="rootViewController" id="UG4-0G-cJk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjJ-e9-dBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1276" y="-383"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h7X-TV-bnp">
             <objects>
                 <tabBarController id="scI-V4-c6n" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QFk-3X-dMi"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eSH-SH-M3s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -60,7 +77,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="EUT-8S-e5q" kind="relationship" relationship="viewControllers" id="cel-0g-K85"/>
-                        <segue destination="cil-35-jxM" kind="relationship" relationship="viewControllers" id="uxd-R4-gzf"/>
                         <segue destination="NvT-x7-mbL" kind="relationship" relationship="viewControllers" id="wJy-Ia-LfM"/>
                         <segue destination="8vw-Po-6MP" kind="relationship" relationship="viewControllers" id="00O-t3-XFB"/>
                     </connections>
