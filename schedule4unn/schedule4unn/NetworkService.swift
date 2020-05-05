@@ -13,13 +13,13 @@ class NetworkService
     func request(urlString:String, completion: @escaping ([ScheduleResponse?], Error?) -> Void)
     {
         let openUrl = NSURL(string: urlString)
-        //guard let url = URL(string: urlString) else {return}
         URLSession.shared.dataTask(with: openUrl! as URL){ (data,response,error) in
             DispatchQueue.main.async {
                 if let error = error
                 {
                     print("Some error")
                     completion([], error)
+                    print(error)
                     return
                 }
                 guard let data = data else {return}
@@ -61,7 +61,6 @@ class NetworkService
     func requestSearch(urlString:String, completion: @escaping ([SearchResponse?], Error?) -> Void)
     {
         let openUrl = NSURL(string: urlString)
-       // guard let url = URL(string: urlString) else {return}
         URLSession.shared.dataTask(with: openUrl! as URL){ (data,response,error) in
             DispatchQueue.main.async {
                 if let error = error

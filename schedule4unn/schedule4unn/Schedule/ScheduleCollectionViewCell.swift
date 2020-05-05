@@ -10,41 +10,26 @@ import UIKit
 
 class ScheduleCollectionViewCell: UICollectionViewCell {
     
-  
-   
-    @IBOutlet weak var label: SFLabel!
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var view: UIView!
-    
     @IBOutlet weak var textDate: UILabel!
     
-    
-    /* var scheduleInfo:ScheduleTableCell = {
-        let info = ScheduleTableCell()
-        return info
-    }()*/
-    
-    var scheduleInfo:ScheduleDateCell?//[ScheduleTableCell?]?
-    
+    var scheduleInfo:ScheduleDateCell?
     
     func setCharacterSpacig(string:String) -> NSMutableAttributedString {
         
         let attributedStr = NSMutableAttributedString(string: string)
-        attributedStr.addAttribute(NSAttributedString.Key.kern, value: 5.1, range: NSMakeRange(0, attributedStr.length))
+        attributedStr.addAttribute(NSAttributedString.Key.kern, value: 0.65, range: NSMakeRange(0, attributedStr.length))
         return attributedStr
     }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
        table?.delegate = self
        table?.dataSource = self
-        //table?.register(ScheduleTableViewCell.self, forCellReuseIdentifier: "tablecell")
-        table?.rowHeight = 110
-        //let attributedString = NSMutableAttributedString(string: textDate.text ?? "")
-       // attributedString.addAttribute(NSMutableAttributedString.Key.kern, value: characterSpacing, range: NSRange(location: 0, length: textDate.text?.count))
-        //let attributedString = NSMutableAttributedString(string: label.text ?? "label")
-       // attributedString.addAttribute(NSAttributedString.Key.kern, value:   CGFloat(1.4), range: NSRange(location: 0, length: 9))
-       // label?.characterSpacing = 5
+        table?.rowHeight = 113
     }
     
     func reloadTable() -> () {
@@ -57,20 +42,22 @@ class ScheduleCollectionViewCell: UICollectionViewCell {
 
 extension ScheduleCollectionViewCell: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scheduleInfo?.lessons.count ?? 1
+        return scheduleInfo?.lessons.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "tablecell", for: indexPath) as? ScheduleTableViewCell
         cell?.isMultipleTouchEnabled = false
+       print(label.font.fontName)
         if (scheduleInfo != nil){
             if ((scheduleInfo?.lessons.count ?? 0)>0){
-           cell?.end?.text = scheduleInfo?.lessons[indexPath.row].end
-        cell?.info?.text = scheduleInfo?.lessons[indexPath.row].info
-        cell?.start?.text = scheduleInfo?.lessons[indexPath.row].start
-        cell?.name?.text = scheduleInfo?.lessons[indexPath.row].name
-        cell?.name2?.text = scheduleInfo?.lessons[indexPath.row].name2
-        cell?.type?.text = scheduleInfo?.lessons[indexPath.row].type
+                cell?.end.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].end ?? "text")
+        cell?.info?.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].info ?? "text")
+        cell?.start?.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].start ?? "text")
+        cell?.name?.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].name ?? "text")
+        cell?.name2?.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].name2 ?? "text")
+        cell?.type?.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].type ?? "text")
+                 cell?.setColors()
             }
         }
         return cell ?? UITableViewCell()

@@ -23,3 +23,5 @@ struct ScheduleDateCell{
     var date:String?
     var noClasses:String?
 }
+
+

@@ -4,6 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>SFProDisplay-Bold.ttf</string>
+		<string>futura-pt-medium.ttf</string>
+		<string>futura-pt-book.ttf</string>
+		<string>futura-pt-bold.ttf</string>
 		<string>SFProDisplay-Regular.ttf</string>
 		<string>9651.ttf</string>
 		<string>SF-Font-Pro.dmg</string>

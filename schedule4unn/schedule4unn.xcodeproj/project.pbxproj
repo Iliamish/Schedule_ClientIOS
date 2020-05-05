@@ -12,7 +12,6 @@
 		751DB9572459D40600EE0061 /* SanFrancisco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75A2769F2459CBE50023A849 /* SanFrancisco.ttf */; };
 		751DB9592459D47200EE0061 /* SF-Font-Pro.dmg in Resources */ = {isa = PBXBuildFile; fileRef = 751DB9582459D47200EE0061 /* SF-Font-Pro.dmg */; };
 		751DB95B2459D4A600EE0061 /* 9651.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 751DB95A2459D4A500EE0061 /* 9651.ttf */; };
-		751DB95D2459D5F000EE0061 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 751DB95C2459D5F000EE0061 /* font */; };
 		751DB95F245A063F00EE0061 /* SFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DB95E245A063F00EE0061 /* SFLabel.swift */; };
 		755ACED82428EFD400444200 /* FreeAuditories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755ACED72428EFD400444200 /* FreeAuditories.storyboard */; };
 		755ACEDA2428F3FB00444200 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755ACED92428F3FB00444200 /* Profile.storyboard */; };
@@ -26,6 +25,10 @@
 		757EC6962424CFFC00AC4CD2 /* schedule4unnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EC6952424CFFC00AC4CD2 /* schedule4unnTests.swift */; };
 		757EC6A12424CFFC00AC4CD2 /* schedule4unnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EC6A02424CFFC00AC4CD2 /* schedule4unnUITests.swift */; };
 		757EC6AF2424F1AD00AC4CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757EC6AE2424F1AD00AC4CD2 /* Assets.xcassets */; };
+		75915DCD2460502500E5D0F6 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75915DCC2460502500E5D0F6 /* SFProDisplay-Regular.ttf */; };
+		75915DCF2460522E00E5D0F6 /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75915DCE2460522E00E5D0F6 /* SFProDisplay-Bold.ttf */; };
+		75915DD12460700100E5D0F6 /* EnterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75915DD02460700100E5D0F6 /* EnterTableViewCell.swift */; };
+		75915DD3246085D600E5D0F6 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75915DD2246085D600E5D0F6 /* SearchTableViewCell.swift */; };
 		7599ED592454D7F3004AF0B1 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599ED582454D7F3004AF0B1 /* ScheduleCollectionViewCell.swift */; };
 		7599ED5C2454D88D004AF0B1 /* ScheduleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599ED5B2454D88D004AF0B1 /* ScheduleModels.swift */; };
 		7599ED5E24561D3C004AF0B1 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7599ED5D24561D3B004AF0B1 /* ScheduleTableViewCell.swift */; };
@@ -33,7 +36,11 @@
 		75CE5681244360E800B9D435 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE5680244360E800B9D435 /* NetworkService.swift */; };
 		75CE568324436D4600B9D435 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE568224436D4500B9D435 /* ProfileViewController.swift */; };
 		75D5C39F243B718F005053FA /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D5C39E243B718F005053FA /* ScheduleViewController.swift */; };
+		75DD85E1245E0FBB007036CA /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD85E0245E0FBB007036CA /* EnterViewController.swift */; };
 		75EC5CF52446360D001249A4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EC5CF42446360D001249A4 /* SearchViewController.swift */; };
+		75FE0993245B66C8009719C1 /* futura-pt-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75FE0992245B66C6009719C1 /* futura-pt-book.ttf */; };
+		75FE0995245B66D9009719C1 /* futura-pt-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75FE0994245B66D9009719C1 /* futura-pt-medium.ttf */; };
+		75FE0997245B66E6009719C1 /* futura-pt-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75FE0996245B66E5009719C1 /* futura-pt-bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +64,6 @@
 		7510E45324473BC400BED180 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		751DB9582459D47200EE0061 /* SF-Font-Pro.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Font-Pro.dmg"; sourceTree = "<group>"; };
 		751DB95A2459D4A500EE0061 /* 9651.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9651.ttf; sourceTree = "<group>"; };
-		751DB95C2459D5F000EE0061 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = font; sourceTree = "<group>"; };
 		751DB95E245A063F00EE0061 /* SFLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLabel.swift; sourceTree = "<group>"; };
 		755ACED72428EFD400444200 /* FreeAuditories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FreeAuditories.storyboard; sourceTree = "<group>"; };
 		755ACED92428F3FB00444200 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -77,6 +83,10 @@
 		757EC6A02424CFFC00AC4CD2 /* schedule4unnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schedule4unnUITests.swift; sourceTree = "<group>"; };
 		757EC6A22424CFFC00AC4CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		757EC6AE2424F1AD00AC4CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75915DCC2460502500E5D0F6 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		75915DCE2460522E00E5D0F6 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		75915DD02460700100E5D0F6 /* EnterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterTableViewCell.swift; sourceTree = "<group>"; };
+		75915DD2246085D600E5D0F6 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		7599ED582454D7F3004AF0B1 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		7599ED5B2454D88D004AF0B1 /* ScheduleModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModels.swift; sourceTree = "<group>"; };
 		7599ED5D24561D3B004AF0B1 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,7 +94,11 @@
 		75CE5680244360E800B9D435 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		75CE568224436D4500B9D435 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		75D5C39E243B718F005053FA /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		75DD85E0245E0FBB007036CA /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 		75EC5CF42446360D001249A4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		75FE0992245B66C6009719C1 /* futura-pt-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "futura-pt-book.ttf"; sourceTree = "<group>"; };
+		75FE0994245B66D9009719C1 /* futura-pt-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "futura-pt-medium.ttf"; sourceTree = "<group>"; };
+		75FE0996245B66E5009719C1 /* futura-pt-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "futura-pt-bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7574D1622461606900B19029 /* Enter */ = {
+			isa = PBXGroup;
+			children = (
+				75915DD02460700100E5D0F6 /* EnterTableViewCell.swift */,
+				75DD85E0245E0FBB007036CA /* EnterViewController.swift */,
+			);
+			path = Enter;
+			sourceTree = "<group>";
+		};
+		7574D1632461609F00B19029 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				755ACEDB2428F51C00444200 /* Search.storyboard */,
+				75915DD2246085D600E5D0F6 /* SearchTableViewCell.swift */,
+				75EC5CF42446360D001249A4 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		757EC6762424CFFC00AC4CD2 = {
 			isa = PBXGroup;
 			children = (
@@ -136,21 +169,26 @@
 			isa = PBXGroup;
 			children = (
 				757EC6822424CFFC00AC4CD2 /* AppDelegate.swift */,
+				75CE568224436D4500B9D435 /* ProfileViewController.swift */,
 				757EC6842424CFFC00AC4CD2 /* ViewController.swift */,
 				757EC6AE2424F1AD00AC4CD2 /* Assets.xcassets */,
-				757EC6862424CFFC00AC4CD2 /* Main.storyboard */,
-				757EC6892424CFFC00AC4CD2 /* LaunchScreen.storyboard */,
 				757EC68C2424CFFC00AC4CD2 /* Info.plist */,
 				751DB95E245A063F00EE0061 /* SFLabel.swift */,
 				755ACED72428EFD400444200 /* FreeAuditories.storyboard */,
-				755ACEDB2428F51C00444200 /* Search.storyboard */,
+				757EC6892424CFFC00AC4CD2 /* LaunchScreen.storyboard */,
+				757EC6862424CFFC00AC4CD2 /* Main.storyboard */,
+				7574D1622461606900B19029 /* Enter */,
 				7599ED5A2454D822004AF0B1 /* Models */,
 				7599ED572454D5CC004AF0B1 /* Schedule */,
 				7599ED562454D54D004AF0B1 /* Profile */,
-				75EC5CF42446360D001249A4 /* SearchViewController.swift */,
+				7574D1632461609F00B19029 /* Search */,
 				75CE5680244360E800B9D435 /* NetworkService.swift */,
-				751DB95C2459D5F000EE0061 /* font */,
 				751DB9582459D47200EE0061 /* SF-Font-Pro.dmg */,
+				75FE0992245B66C6009719C1 /* futura-pt-book.ttf */,
+				75915DCE2460522E00E5D0F6 /* SFProDisplay-Bold.ttf */,
+				75915DCC2460502500E5D0F6 /* SFProDisplay-Regular.ttf */,
+				75FE0996245B66E5009719C1 /* futura-pt-bold.ttf */,
+				75FE0994245B66D9009719C1 /* futura-pt-medium.ttf */,
 				751DB95A2459D4A500EE0061 /* 9651.ttf */,
 				75A2769F2459CBE50023A849 /* SanFrancisco.ttf */,
 			);
@@ -180,7 +218,6 @@
 			children = (
 				755ACED92428F3FB00444200 /* Profile.storyboard */,
 				7510E45324473BC400BED180 /* ProfileTableViewController.swift */,
-				75CE568224436D4500B9D435 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -311,13 +348,17 @@
 			files = (
 				755ACEDE2428F5F500444200 /* Schedule.storyboard in Resources */,
 				751DB95B2459D4A600EE0061 /* 9651.ttf in Resources */,
+				75FE0993245B66C8009719C1 /* futura-pt-book.ttf in Resources */,
+				75915DCD2460502500E5D0F6 /* SFProDisplay-Regular.ttf in Resources */,
 				75A276A02459CBE70023A849 /* SanFrancisco.ttf in Resources */,
 				757EC6882424CFFC00AC4CD2 /* Main.storyboard in Resources */,
+				75FE0995245B66D9009719C1 /* futura-pt-medium.ttf in Resources */,
+				75FE0997245B66E6009719C1 /* futura-pt-bold.ttf in Resources */,
 				757EC6AF2424F1AD00AC4CD2 /* Assets.xcassets in Resources */,
 				751DB9592459D47200EE0061 /* SF-Font-Pro.dmg in Resources */,
-				751DB95D2459D5F000EE0061 /* font in Resources */,
 				755ACEDA2428F3FB00444200 /* Profile.storyboard in Resources */,
 				757EC68B2424CFFC00AC4CD2 /* LaunchScreen.storyboard in Resources */,
+				75915DCF2460522E00E5D0F6 /* SFProDisplay-Bold.ttf in Resources */,
 				755ACEDC2428F51C00444200 /* Search.storyboard in Resources */,
 				755ACED82428EFD400444200 /* FreeAuditories.storyboard in Resources */,
 			);
@@ -350,14 +391,17 @@
 				751DB95F245A063F00EE0061 /* SFLabel.swift in Sources */,
 				75EC5CF52446360D001249A4 /* SearchViewController.swift in Sources */,
 				7599ED5E24561D3C004AF0B1 /* ScheduleTableViewCell.swift in Sources */,
+				75DD85E1245E0FBB007036CA /* EnterViewController.swift in Sources */,
 				7599ED5C2454D88D004AF0B1 /* ScheduleModels.swift in Sources */,
 				75CE5681244360E800B9D435 /* NetworkService.swift in Sources */,
 				75D5C39F243B718F005053FA /* ScheduleViewController.swift in Sources */,
 				7599ED592454D7F3004AF0B1 /* ScheduleCollectionViewCell.swift in Sources */,
+				75915DD3246085D600E5D0F6 /* SearchTableViewCell.swift in Sources */,
 				756C9786243DFDD50016439E /* ScheduleResponse.swift in Sources */,
 				757EC6852424CFFC00AC4CD2 /* ViewController.swift in Sources */,
 				7510E45424473BC400BED180 /* ProfileTableViewController.swift in Sources */,
 				757EC6832424CFFC00AC4CD2 /* AppDelegate.swift in Sources */,
+				75915DD12460700100E5D0F6 /* EnterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
