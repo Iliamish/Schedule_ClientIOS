@@ -10,14 +10,17 @@ class ProfileTableViewController: UITableViewController {
     @IBOutlet weak var labelGroup: UILabel!
     @IBOutlet weak var labelGroupInfo: UILabel!
     
+    @IBOutlet weak var logOut: UITableViewCell!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
         attribute(label: labelInfo, size: 16, fontName: "FuturaPT-Book")
         attribute(label: labelGroup, size: 18, fontName: "FuturaPT-Medium")
         attribute(label: labelGroupInfo, size: 16, fontName: "FuturaPT-Book")
+       
     }
     
+
     override func viewWillAppear(_ animated: Bool) {
         let type = UserDefaults.standard.integer(forKey: "typeKey")
         switch type {
@@ -43,6 +46,10 @@ class ProfileTableViewController: UITableViewController {
         else {
             labelGroupInfo.text="none"
         }
+        
+    }
+    @IBAction func logOut(_ sender: Any) {
+        AppDelegate.shared.rootViewController.switchToLogout()
     }
     
     func attribute(label: UILabel, size: CGFloat, fontName: String){

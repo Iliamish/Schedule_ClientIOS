@@ -18,8 +18,9 @@
 		755ACEDC2428F51C00444200 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755ACEDB2428F51C00444200 /* Search.storyboard */; };
 		755ACEDE2428F5F500444200 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755ACEDD2428F5F500444200 /* Schedule.storyboard */; };
 		756C9786243DFDD50016439E /* ScheduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C9785243DFDD50016439E /* ScheduleResponse.swift */; };
+		7570F5D02465914E008461DF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7570F5CF2465914E008461DF /* SplashViewController.swift */; };
 		757EC6832424CFFC00AC4CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EC6822424CFFC00AC4CD2 /* AppDelegate.swift */; };
-		757EC6852424CFFC00AC4CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EC6842424CFFC00AC4CD2 /* ViewController.swift */; };
+		757EC6852424CFFC00AC4CD2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EC6842424CFFC00AC4CD2 /* RootViewController.swift */; };
 		757EC6882424CFFC00AC4CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EC6862424CFFC00AC4CD2 /* Main.storyboard */; };
 		757EC68B2424CFFC00AC4CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EC6892424CFFC00AC4CD2 /* LaunchScreen.storyboard */; };
 		757EC6962424CFFC00AC4CD2 /* schedule4unnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EC6952424CFFC00AC4CD2 /* schedule4unnTests.swift */; };
@@ -70,9 +71,10 @@
 		755ACEDB2428F51C00444200 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		755ACEDD2428F5F500444200 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		756C9785243DFDD50016439E /* ScheduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponse.swift; sourceTree = "<group>"; };
+		7570F5CF2465914E008461DF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		757EC67F2424CFFC00AC4CD2 /* schedule4unn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schedule4unn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757EC6822424CFFC00AC4CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		757EC6842424CFFC00AC4CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		757EC6842424CFFC00AC4CD2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		757EC6872424CFFC00AC4CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		757EC68A2424CFFC00AC4CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		757EC68C2424CFFC00AC4CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,8 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				757EC6822424CFFC00AC4CD2 /* AppDelegate.swift */,
+				7570F5CF2465914E008461DF /* SplashViewController.swift */,
 				75CE568224436D4500B9D435 /* ProfileViewController.swift */,
-				757EC6842424CFFC00AC4CD2 /* ViewController.swift */,
+				757EC6842424CFFC00AC4CD2 /* RootViewController.swift */,
 				757EC6AE2424F1AD00AC4CD2 /* Assets.xcassets */,
 				757EC68C2424CFFC00AC4CD2 /* Info.plist */,
 				751DB95E245A063F00EE0061 /* SFLabel.swift */,
@@ -398,10 +401,11 @@
 				7599ED592454D7F3004AF0B1 /* ScheduleCollectionViewCell.swift in Sources */,
 				75915DD3246085D600E5D0F6 /* SearchTableViewCell.swift in Sources */,
 				756C9786243DFDD50016439E /* ScheduleResponse.swift in Sources */,
-				757EC6852424CFFC00AC4CD2 /* ViewController.swift in Sources */,
+				757EC6852424CFFC00AC4CD2 /* RootViewController.swift in Sources */,
 				7510E45424473BC400BED180 /* ProfileTableViewController.swift in Sources */,
 				757EC6832424CFFC00AC4CD2 /* AppDelegate.swift in Sources */,
 				75915DD12460700100E5D0F6 /* EnterTableViewCell.swift in Sources */,
+				7570F5D02465914E008461DF /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

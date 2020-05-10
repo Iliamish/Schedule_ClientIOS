@@ -7,14 +7,50 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var notificationCenter = UNUserNotificationCenter.current()
 
 
+    
+    func scheduleNotification(time: String, type: String, name: String, place:String) {
+        let content = UNMutableNotificationContent()
+        content.title = "Занятие в \(time)"
+        content.subtitle = type
+        content.body = "Не опоздайте на \(name) в \(place)"
+        content.badge = 1
+        content.sound = UNNotificationSound.default
+        
+        var date = Date()
+        date = date.addingTimeInterval(5)
+        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
+        let identifier = "Local Notification"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        notificationCenter.add(request) { (error) in
+            if let error = error {
+                print("Error \(error.localizedDescription)")
+            }
+        }
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = RootViewController()
+        window?.makeKeyAndVisible()
+        notificationCenter.delegate = self
+        
+        let options: UNAuthorizationOptions = [.alert, .sound, .badge]
+        notificationCenter.requestAuthorization(options: options) {
+            (didAllow, error) in
+            if !didAllow {
+                print("User has declined notifications")
+            }
+        }
         // Override point for customization after application launch.
         return true
     }
@@ -44,3 +80,18 @@ import UIKit
 
 }
 
+extension AppDelegate {
+    static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    var rootViewController: RootViewController {
+        return window!.rootViewController as! RootViewController
+    }
+}
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound])
+    }
+}

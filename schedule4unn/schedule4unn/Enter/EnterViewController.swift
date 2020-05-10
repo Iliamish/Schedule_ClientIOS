@@ -24,6 +24,7 @@ class EnterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Авторизация"
         button.layer.cornerRadius = 8
         setupTableView()
         tableGroups.isHidden = true
@@ -79,7 +80,9 @@ class EnterViewController: UIViewController {
         UserDefaults.standard.set(textDetail, forKey: "groupDetailKey")
         UserDefaults.standard.set(id, forKey: "idKey")
         UserDefaults.standard.set(type, forKey: "typeKey")
+        UserDefaults.standard.set(true, forKey: "logged in")
         UserDefaults.standard.synchronize()
+        AppDelegate.shared.rootViewController.switchToMainScreen()
     }
 }
 

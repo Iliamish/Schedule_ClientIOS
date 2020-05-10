@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3p-bs-Lo6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xDR-7r-eTr">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,26 +19,20 @@
     </customFonts>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="lP7-mu-UpT">
+        <scene sceneID="IXy-Ew-l2X">
             <objects>
-                <navigationController id="K3p-bs-Lo6" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gsv-PP-uaa">
+                <navigationController id="xDR-7r-eTr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SvJ-UP-fqc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="5BJ-e6-Hgb" kind="relationship" relationship="rootViewController" id="ChG-Gv-mQd"/>
+                        <segue destination="5BJ-e6-Hgb" kind="relationship" relationship="rootViewController" id="kQY-bx-bJI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QSM-gn-Id1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPv-rc-CU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1268" y="327"/>
+            <point key="canvasLocation" x="-1257" y="270"/>
         </scene>
         <!--Сегодняшняя дата-->
         <scene sceneID="elV-tl-hVz">
