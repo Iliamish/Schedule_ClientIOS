@@ -40,7 +40,7 @@ class ScheduleTableViewCell: UITableViewCell {
             type.textColor = UIColor(red: 23/255.0, green: 185/255.0, blue: 49/255.0, alpha: 1)
             colorView.backgroundColor = UIColor(red: 23/255.0, green: 185/255.0, blue: 49/255.0, alpha: 1)
             colorView.isHidden = false
-        case "Лабораторная работа":
+        case "Лабораторная":
             type.textColor = UIColor(red: 179/255.0, green: 19/255.0, blue: 205/255.0, alpha: 1)
             colorView.backgroundColor = UIColor(red: 179/255.0, green: 19/255.0, blue: 205/255.0, alpha: 1)
             colorView.isHidden = false

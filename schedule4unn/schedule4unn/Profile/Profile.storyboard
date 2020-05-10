@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bkc-vb-Lt7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hoe-eC-nLl">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,24 +18,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Профиль-->
-        <scene sceneID="P7h-qY-J5y">
-            <objects>
-                <navigationController id="bkc-vb-Lt7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Профиль" image="icons8-мужчина-пользователь-50" id="f7u-33-sKU"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7U5-cv-kS6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="hoe-eC-nLl" kind="relationship" relationship="rootViewController" id="dFF-sR-epl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dsC-60-76P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="753" y="-871"/>
-        </scene>
         <!--Профиль-->
         <scene sceneID="SrE-dT-WtD">
             <objects>
@@ -196,6 +178,13 @@
                                                     <rect key="frame" x="20" y="18" width="25" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCb-EA-DcS">
+                                                    <rect key="frame" x="0.0" y="-7" width="414" height="73"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="logOut:" destination="hoe-eC-nLl" eventType="touchUpInside" id="9SG-yc-WnD"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gZH-Fg-YAY" firstAttribute="centerY" secondItem="USg-ub-fyg" secondAttribute="centerY" id="OWZ-BF-cxY"/>
@@ -211,11 +200,14 @@
                             <outlet property="delegate" destination="hoe-eC-nLl" id="ApF-Tf-jky"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" image="icons8-мужчина-пользователь-50" id="y7n-Ol-SUW"/>
                     <navigationItem key="navigationItem" title="Профиль" id="1pI-jC-D8X"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="labelGroup" destination="zzC-af-QVI" id="WrG-Vm-LCy"/>
                         <outlet property="labelGroupInfo" destination="Oew-wG-leh" id="1bM-nV-LBm"/>
                         <outlet property="labelInfo" destination="Enh-hW-x53" id="LWt-U9-FnK"/>
+                        <outlet property="logOut" destination="GFl-T1-zer" id="qpH-ka-8rQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osN-2e-OXO" userLabel="First Responder" sceneMemberID="firstResponder"/>

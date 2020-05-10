@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ScheduleCollectionViewCell: UICollectionViewCell {
     
@@ -14,6 +15,8 @@ class ScheduleCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var textDate: UILabel!
+    
+    let appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     var scheduleInfo:ScheduleDateCell?
     
@@ -34,6 +37,11 @@ class ScheduleCollectionViewCell: UICollectionViewCell {
     
     func reloadTable() -> () {
         self.table.reloadData()
+    }
+    
+    func scheduleNotification(notificationType: String) {
+        
+       
     }
    
     }
@@ -58,9 +66,20 @@ extension ScheduleCollectionViewCell: UITableViewDelegate, UITableViewDataSource
         cell?.name2?.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].name2 ?? "text")
         cell?.type?.attributedText = setCharacterSpacig(string: scheduleInfo?.lessons[indexPath.row].type ?? "text")
                  cell?.setColors()
+                
+                //////////////////
+               
             }
         }
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        _ = UIAlertAction(title: "OK", style: .default) { (action) in
+            
+            self.appDelegate?.scheduleNotification(time: self.scheduleInfo?.lessons[indexPath.row].start ?? "0:00", type: (self.scheduleInfo?.lessons[indexPath.row].type)!, name: (self.scheduleInfo?.lessons[indexPath.row].name)!, place: (self.scheduleInfo?.lessons[indexPath.row].info)!)
+        }
+    
     }
     
     
